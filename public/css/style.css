@@ -1996,11 +1996,16 @@ icon box
 }
 .mil-icon-box.mil-hover {
   padding: 60px 30px;
-  transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
+  transition: background-color 0.2s cubic-bezier(0, 0, 0.3642, 1),
+  transform 0.4s cubic-bezier(0, 0, 0.3642, 1),
+  box-shadow 0.2s cubic-bezier(0, 0, 0.3642, 1);
 }
+
 .mil-icon-box.mil-hover:hover,
 .mil-icon-box.mil-hover.mil-hover-active {
   background-color: rgb(246, 248, 255);
+  transform: translateY(-10px); /* Adds a subtle lift effect */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Adds a soft shadow */
 }
 .mil-icon-box.mil-hover:hover h5,
 .mil-icon-box.mil-hover:hover p,
